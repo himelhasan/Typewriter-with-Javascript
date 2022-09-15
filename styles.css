@@ -32,7 +32,7 @@ body {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #display {
@@ -46,7 +46,7 @@ body {
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #countdown {
