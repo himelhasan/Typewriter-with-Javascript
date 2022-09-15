@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="text-white bg-gray-900">
+      <div class="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1
+            class="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+          >
+            Assignment
+
+            <span class="sm:block"> Seven </span>
+          </h1>
+
+          <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+            Answering questions realted to debug and Broswer API
+          </p>
+
+          <div class="flex flex-wrap justify-center mt-8 gap-4">
+            <a
+              class="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
+              href="#"
+            >
+              Get Started
+            </a>
+
+            <a
+              class="block w-full px-12 py-3 text-sm font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+              href="#"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTION AND ANSWER SECTION -->
+    <div class="container w-full mx-20 my-10 px-20">
+      <div class="space-y-4">
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group" open>
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 class="text-lg font-medium text-gray-900">
+              What is the difference Between Local Storage, Session Storage?
+            </h5>
+
+            <span
+              class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700">
+            Local Storage: This read-only interface property provides access to the
+            Document’s local storage object, the stored data is stored across browser
+            sessions. Similar to sessionStorage, except that localStorage data gets
+            cleared when the page session ends – that is when the page is closed. It is
+            cleared when the last “private” tab of a browser is closed (localStorage data
+            for a document loaded in a private browsing or incognito session). Session
+            Storage: Session Storage objects can be accessed using the sessionStorage
+            read-only property. The difference between sessionStorage and localStorage is
+            that localStorage data does not expire, whereas sessionStorage data is cleared
+            when the page session ends.
+          </p>
+        </details>
+
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 class="text-lg font-medium text-gray-900">
+              What is the difference between global scope and block scope ?
+            </h5>
+
+            <span
+              class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700">
+            Global scope : A variable exists inside or outside a block. If a variable is
+            declared outside all functions or curly braces ({}), it exists in the global
+            scope. The global variables can be accessed by any line of code in the
+            program, including inside blocks. Block scope : variables defined with the var
+            keyword. Var can declare a variable either in the global or local scope. The
+            variables that are declared within the block scope are comparable to local
+            ones. They are available within the block that they are defined.
+          </p>
+        </details>
+
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 class="text-lg font-medium text-gray-900">
+              How does javascript event loop work ?
+            </h5>
+
+            <span
+              class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700">
+            The Event Loop has one simple job-- tomonitor the call stack Queue. If the
+            Call Stack is empty, the Event Loop will the first eventfrom the queue and wii
+            push it to the Call Stack,which effectively runs it.such as iteration is
+            called ack in the Event Loop
+          </p>
+        </details>
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 class="text-lg font-medium text-gray-900">
+              How many way you can get undefined in JavaScript?
+            </h5>
+
+            <span
+              class="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700">
+            8 ways to getundefined as : <br />
+            1. variable that is not initialized will give undefined.<br />
+            2. Function with no return. <br />3. Parameter that is not passed will be
+            undefined.<br />
+            4. if return has nothing on the right side will return undefind.
+            <br />5. Property that doesnot exists on an object will give you undefined.
+            <br />6. Assessing array elements outside of the index range. <br />7.
+            Deleting an element inside an array. <br />8. Set a value directly to
+            undefined.
+          </p>
+        </details>
+      </div>
+    </div>
+  </body>
+</html>
