@@ -46,7 +46,7 @@
         <details class="p-6 border-l-4 border-green-500 bg-gray-50 group" open>
           <summary class="flex items-center justify-between cursor-pointer">
             <h5 class="text-lg font-medium text-gray-900">
-              What is the difference Between Local Storage, Session Storage?
+              What is the difference Between Local Storage, and Session Storage?
             </h5>
 
             <span
@@ -68,16 +68,12 @@
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Local Storage: This read-only interface property provides access to the
-            Document’s local storage object, the stored data is stored across browser
-            sessions. Similar to sessionStorage, except that localStorage data gets
-            cleared when the page session ends – that is when the page is closed. It is
-            cleared when the last “private” tab of a browser is closed (localStorage data
-            for a document loaded in a private browsing or incognito session). Session
-            Storage: Session Storage objects can be accessed using the sessionStorage
-            read-only property. The difference between sessionStorage and localStorage is
-            that localStorage data does not expire, whereas sessionStorage data is cleared
-            when the page session ends.
+            The difference between localStorage and sessionStorage has to do with lifetime
+            and scope: how long the data is saved for and to who the data is accessible.
+            Session storage is destroyed once the user closes the browser whereas, Local
+            storage stores data with no expiration date. The storage capacity of local
+            storage is 5MB/10MB on the other hand the storage capacity of session storage
+            is 5MB.
           </p>
         </details>
 
@@ -106,20 +102,21 @@
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Global scope : A variable exists inside or outside a block. If a variable is
-            declared outside all functions or curly braces ({}), it exists in the global
-            scope. The global variables can be accessed by any line of code in the
-            program, including inside blocks. Block scope : variables defined with the var
-            keyword. Var can declare a variable either in the global or local scope. The
-            variables that are declared within the block scope are comparable to local
-            ones. They are available within the block that they are defined.
+            <b>Block Level Scope:</b> This scope restricts the variable that is declared
+            inside a specific block, from access by the outside of the block. The let &
+            const keyword facilitates the variables to be block scoped.
+            <br />
+            <b>Global Level Scope:</b> In a programming environment, the global scope is
+            the scope that contains, and is visible in all other scopes. In client-side
+            JavaScript, the global scope is generally the web page inside which all the
+            code is being executed.
           </p>
         </details>
 
         <details class="p-6 border-l-4 border-green-500 bg-gray-50 group">
           <summary class="flex items-center justify-between cursor-pointer">
             <h5 class="text-lg font-medium text-gray-900">
-              How does javascript event loop work ?
+              How does the javascript event loop work ?
             </h5>
 
             <span
@@ -141,16 +138,19 @@
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            The Event Loop has one simple job-- tomonitor the call stack Queue. If the
-            Call Stack is empty, the Event Loop will the first eventfrom the queue and wii
-            push it to the Call Stack,which effectively runs it.such as iteration is
-            called ack in the Event Loop
+            An event loop is an endless loop, which waits for tasks, executes them, and
+            then sleeps until it receives more tasks. The Event Loop has one simple job:
+            to monitor the Call Stack and the Callback Queue. The event loop executes
+            tasks from the event queue only when the call stack is empty. If the Call
+            Stack is empty, the Event Loop will take the first event from the queue and
+            will push it to the Call Stack, which effectively runs it. Such an iteration
+            is called a tick in the Event Loop.
           </p>
         </details>
         <details class="p-6 border-l-4 border-green-500 bg-gray-50 group">
           <summary class="flex items-center justify-between cursor-pointer">
             <h5 class="text-lg font-medium text-gray-900">
-              How many way you can get undefined in JavaScript?
+              How many ways you can get undefined in JavaScript?
             </h5>
 
             <span
@@ -172,15 +172,31 @@
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            8 ways to getundefined as : <br />
-            1. variable that is not initialized will give undefined.<br />
-            2. Function with no return. <br />3. Parameter that is not passed will be
-            undefined.<br />
-            4. if return has nothing on the right side will return undefind.
-            <br />5. Property that doesnot exists on an object will give you undefined.
-            <br />6. Assessing array elements outside of the index range. <br />7.
-            Deleting an element inside an array. <br />8. Set a value directly to
-            undefined.
+            We will get an undefined value when we call a non-existent property or method
+            of an object. The global undefined property represents the primitive value
+            undefined. It is one of JavaScript's primitive types. There are eight ways to
+            get undefined:
+            
+            <ol class="list-decimal p-5">
+            <li>Variable That Is Not Initialized Will Be Undefined.
+            </li>
+            <li>Function With No Return.
+            </li>
+            <li>Parameter That Is Not Passed Will Be Undefined.
+            </li>
+            <li>If The Return Has Nothing On The Right Side Will Return Undefined.
+            </li>
+            <li>Property That Does Not Exist On An Object Will Give You Undefined.
+            </li>
+            <li>Assessing Array Elements Outside Of The Index Range.
+            </li>
+            <li> Deleting An Element Inside An Array.
+            </li>
+            <li>Set A Value Directly To Undefined.
+            </li>
+          </ol>
+            
+         
           </p>
         </details>
       </div>
